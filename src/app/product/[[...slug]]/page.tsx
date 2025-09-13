@@ -19,7 +19,7 @@ export default function product({params,}:{params:{slug:string[]}}){
             slug.map((slug)=>
             <li key={slug}><Link href={`/pages/${slug}`}>page {slug}</Link></li>
             ))
-        }
+        } 
 
     }
 
