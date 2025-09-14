@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata={
-    title:"sad",
+    title:"page",
 };
 
 export default function Home(){
@@ -10,11 +10,13 @@ export default function Home(){
 
             <div>
                 <h1>Page List</h1>
+                <ul>
                 {page.map((page)=>
                 <li key={page}>
                     <Link href={`/pages/${page}`} replace>page {page}</Link>
                 </li>
             )}
+            </ul>
             </div>
 
     );

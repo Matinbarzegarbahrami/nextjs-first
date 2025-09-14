@@ -1,5 +1,11 @@
 import Link from "next/link";
 import NavBar from "@/componentes/NavBar/navBar";
+export const metadata={
+    title:{
+        default:"web",
+        template:"%s | web",
+    }
+} ;
 export default function root({children}:{children:React.ReactNode;}){
 return(
     <html lang="en">
