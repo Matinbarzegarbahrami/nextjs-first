@@ -1,5 +1,4 @@
 import Link from "next/link";
-import product from "../product/[[...slug]]/page";
 
 export const metadata={
     title:"sad",
