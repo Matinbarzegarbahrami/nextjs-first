@@ -24,7 +24,7 @@ export default function NavBar(){
             {navLink.map((link)=>
             {
                 return(
-                    <Link href={`${link.address}`} style={{margin:"10px"}}>{`${link.name}`}</Link>
+                    <Link key={link.address} href={`${link.address}`} style={{margin:"10px"}}>{`${link.name}`}</Link>
                 );
             }
             )
